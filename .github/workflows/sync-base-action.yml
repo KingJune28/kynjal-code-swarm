@@ -47,8 +47,8 @@ jobs:
           cd target-repo
 
           # Configure git
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "Kynjal"
+          git config user.email "ebenezer7819@gmail.com"
 
           # Remove all existing files except .git directory
           find . -mindepth 1 -maxdepth 1 -name '.git' -prune -o -exec rm -rf {} +

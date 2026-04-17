@@ -35,12 +35,14 @@ export async function configureGitAuth(
 
   // Configure git user
   console.log("Configuring git user...");
-  const botName = user.login;
-  const botId = user.id;
+  const botName = "Kynjal";
+  const botEmail = "ebenezer7819@gmail.com";
   console.log(`Setting git user as ${botName}...`);
   await $`git config user.name "${botName}"`;
-  await $`git config user.email "${botId}+${botName}@${noreplyDomain}"`;
+  await $`git config user.email "${botEmail}"`;
   console.log(`✓ Set git user as ${botName}`);
+  void user;
+  void noreplyDomain;
 
   // Remove the authorization header that actions/checkout sets
   console.log("Removing existing git authentication headers...");
